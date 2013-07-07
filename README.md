@@ -35,3 +35,14 @@ du formulaire.
 La suppression permet d'effacer le formulaire present sur le réseau et aussi les informations de ce formulaire dans la base
 de données.
 La modification permet de modifer l'intitulé du formulaire ainsi que le formulaire.
+Après une modification la version du formulaire est incrémenté de 1.
+
+Le code source en général
+---------------------------------
+
+Le code source contient moins de ligne que la version 1 et maintenant l'application fonctionne avec des threads.
+Chaque opération s'effectue en arrière-plan ce qui permet de ne pas figer le logiciel.
+Tous les paramètres de connexion sont dans une classe Fontions.
+Pour le sytème de mises à jour, il suffira juste de modifer la chaine de connexion dans le Splashscreen
+Dans le code les éléments (textbox, bouton...) sont séparés des threads pour une meilleur lisibilité.
+Chaque controles sont renommés
